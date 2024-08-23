@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+    color:aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.17em;
+    margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-color: black;
+        color:aliceblue;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+        margin: 0;
+    }    
+}
+
+.red{
+    color:rgb(255, 0, 72);
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.centerblock{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 40px;
+    max-width: 900px;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-group button{
+    background-color: grey;
+    color:white;
+    cursor: pointer;
+    flex: 1;
+    font: inherit;
+    border: 1px;
+    border-radius: 1;
+}
+
+.btn-group button:hover{
+    background-color: rgb(255, 0, 72);
+}
+
+a{
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(47, 73, 108);
+    font-size: 0.8em;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(202, 21, 72);
+}
+
+.column{
+    float: left;
+    width: 45%;
+    margin: 1%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+}

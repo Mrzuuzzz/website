@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge's Portfolio About</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <!--nav bar-->
+    <ul style="margin: 0;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:jorgejrwellesley@gmail.com">Contact</a></li>
+        <li style="float: right;"><a href="https://genrandom.com/cats/" target="_blank">?</a></li>
+    </ul>
+
+    <!--main content-->
+    <div class="centerblock">
+        <h1>About</h1>
+        <div style="font-size:1.25em; word-wrap: break-word;">
+            <!--the funny code thingy-->
+            <div>
+                <span style="color: rgb(78, 187, 125);">String</span> <span style="color: rgb(93,177,205);">firstName</span> = <span style="color: rgb(186, 136, 86);">"Jorge"</span>;<br>
+                <span style="color: rgb(78, 187, 125);">String</span> <span style="color: rgb(93,177,205);">lastName</span> = <span style="color: rgb(186, 136, 86);">"Wellesley-Bourke Hernandez"</span>;<br>
+                <span style="color: rgb(78, 187, 125);">int</span> <span style="color: rgb(93,177,205);">age</span> = <span style="color: rgb(181, 206, 168);">18</span>;<br>
+                <span style="color: rgb(78, 187, 125);">String</span> <span style="color: rgb(93,177,205);">state</span> = <span style="color: rgb(186, 136, 86);">"NJ"</span>;<br>
+                <span style="color: rgb(78, 187, 125);">String</span> <span style="color: rgb(93,177,205);">city</span> = <span style="color: rgb(186, 136, 86);">"Guttenberg"</span>;<br>
+                <span style="color: rgb(78, 187, 125);">int</span> <span style="color: rgb(93,177,205);">phoneNumber</span> = <span style="color: rgb(181,206,168);">9142232597</span>;<br>
+                <br>
+            </div>
+        </div>
+
+        <div class="btn-group" style="height: 40px;">
+            <button onclick="openInNewTab('https://docs.google.com/document/d/1Fk6GhxxjeFGvZBVZdrg2uL9xqN8kOm03H3zfyRY8v7c/edit?usp=sharing')">open resume</button>
+            <button onclick="openInNewTab('https://github.com/Mrzuuzzz')">github</button>
+            <button onclick="openInNewTab('https://replit.com/@Mrzuuzzz')">replit</button>
+            <button onclick="copyEmail()" id="copyEmailButton">copy email</button>
+        </div>
+        
+    </div>
+
+    <div class="tcenter">
+        <small>
+            <footer>
+                This website is in very early production (ver 2)<br>
+                © 2024 Jorge Wellesley-B H
+            </footer>
+        </small>
+    </div>
+
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+
+        function copyEmail(){
+            navigator.clipboard.writeText("jorgejrwellesley@gmail.com");
+        }
+
+        document.getElementById("copyEmailButton").addEventListener("click", function() {
+            var button = this;
+            var originalText = button.textContent;
+            button.textContent = "COPIED!";
+            
+            setTimeout(function() {
+                button.textContent = originalText;
+            }, 1000); // Change back after 2 seconds
+        });
+    </script>
+</body>
+</html>
